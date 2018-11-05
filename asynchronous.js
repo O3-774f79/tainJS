@@ -1,21 +1,28 @@
-
-// const a = async () =>{
-// 		await setTimeout(()=>{
-// 			console.log("3 sec")
-// 		},3000)
-// }
-// const b =  () =>{
-// 		console.log("4 sec")
-// }
 var axios = require('axios')
 
+//es6 ~~ javascript 2017
+//valiable  const let finally
+ 
+// const numbers = [2,3,4,5,6]
+// let result = []
+// console.log(result) // [4,6,8,10,12]
+// const res = numbers.map(number => {
+// 	return number*2
+// })
+// console.log(res)
+// let obj1 = { a: 1, b: 2 }
+// let obj2 = { c: 3, d: 4 }
+// console.log({ ...obj1, ...obj2 }) // {"a":1,"b":2,"c":3,"d":4}
+
+// let arr1 = [1, 2, 3]
+// let arr2 = [4, 5, 6]
+// console.log([...arr1, ...arr2]) // [1,2,3,4,5,6]
+console.log("###############################################################################################################")
 //1
 const a = () => {
 // สั่งงานนาย B แจกบัตร b01
 axios.get('https://jsonplaceholder.typicode.com/users')
-// อยากได้งานนาย B
 .then((result) => {
-  // ได้งานมาในตัวแปร result
   console.log(result.data)
   console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 })
@@ -47,7 +54,7 @@ axios.get('https://jsonplaceholder.typicode.com/posts/1').then((result1) => {
 const d = async () =>{
 	try {
 		let result = await axios.get('https://jsonplaceholder.typicode.com/posts/1')
-		let result2 = await axios.get('https://jsonplaceholder.typicode.com/posts/2')
+		let result2 = await axios.get(`https://jsonplaceholder.typicode.com/posts/`)
 		console.log(result.data)
 		console.log(result2)
 	}
@@ -69,6 +76,6 @@ const e = async () =>{
  
 // a()
 // b()
-// c()
+c()
 // d()
 // e()
