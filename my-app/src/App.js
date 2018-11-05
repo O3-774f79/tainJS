@@ -41,6 +41,7 @@ class App extends Component {
             Learn React
           </a>
           <h1>result Jaaa : {this.state.result}</h1>
+          
           <button onClick={this.onHandleClick1}>test</button>
           <button onClick={this.onHandleClick2 = this.onHandleClick2.bind(this)}>test2</button>
           <button onClick={this.onHandleClick3}>test3</button>
